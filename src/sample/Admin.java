@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.*;
 
-public class Admin {
+public class Admin extends Connector {
     boolean status = true;
     @FXML
     private ListView<?> list;
@@ -41,6 +41,9 @@ public class Admin {
     @FXML
     private Button back;
 
+    public Admin() throws SQLException {
+    }
+
     @FXML
     void back(ActionEvent event) throws IOException {
         Stage stage = (Stage) back.getScene().getWindow();
@@ -55,11 +58,6 @@ public class Admin {
 
     public void initialize() throws SQLException {
         ObservableList books = FXCollections.observableArrayList();
-        String myUrl = "jdbc:mysql://localhost/lito";
-        Connection conn = DriverManager.getConnection(myUrl, "username", "password");
-        String get_request = "SELECT * FROM books";
-        Statement statement = conn.createStatement();
-        ResultSet rs = statement.executeQuery(get_request);
         while (rs.next()) {
             String book = rs.getString("title");
             books.addAll(book);
@@ -75,13 +73,9 @@ public class Admin {
         boolean isMyListNoselected = list.getSelectionModel().isEmpty();
         if (isMyListNoselected == false) {
             try {
-                String myUrl = "jdbc:mysql://localhost/lito";
-                Connection conn = DriverManager.getConnection(myUrl, "username", "password");
                 ObservableList ebook = list.getSelectionModel().getSelectedItems();
                 String res = ebook.get(0).toString();
                 System.out.println(res);
-                String get_request = "Delete  FROM books where title=?";
-                PreparedStatement preparedStmt = conn.prepareStatement(get_request);
                 preparedStmt.setString(1, res);
                 preparedStmt.execute();
                 conn.close();
@@ -117,10 +111,6 @@ public class Admin {
                 alert.setContentText("The fields are empty");
                 alert.showAndWait();
             } else {
-                String myDriver = "org.gjt.mm.mysql.Driver";
-                String myUrl = "jdbc:mysql://localhost/lito";
-                Connection conn = DriverManager.getConnection(myUrl, "username", "password");
-
                 String post_request = " insert into books (title, author,category,year,riting)"
                         + " values (?, ?, ?,?,?)";
                 PreparedStatement preparedStmt = conn.prepareStatement(post_request);

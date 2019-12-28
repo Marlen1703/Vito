@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.sql.*;
 
 
-public class Registration {
+public class Registration  extends Connector{
     @FXML
     private TextField name;
 
@@ -32,26 +32,14 @@ public class Registration {
     @FXML
     private Button back_button;
 
+    public Registration() throws SQLException {
+    }
+
 
     @FXML
     void onclick(ActionEvent event) {
         try {
-
-            // create a mysql database connection
-            String myDriver = "org.gjt.mm.mysql.Driver";
-            String myUrl = "jdbc:mysql://localhost/lito";
-            Class.forName(myDriver);
-            Connection conn = DriverManager.getConnection(myUrl, "username", "password");
-
-            // create a sql date object so we can use it in our INSERT statement
-            // the mysql statement
-            String post_request = " insert into users (username, password,email)"
-                    + " values (?, ?, ?)";
-            String get_request = "SELECT * FROM users";
-
-//        ** Check if are there exist account **  //
-            Statement statement = conn.createStatement();
-            ResultSet rs = statement.executeQuery(get_request);
+            ResultSet rs = statement.executeQuery(select_data);
 
             if (rs.next()) {
                 String firstName = rs.getString("username");

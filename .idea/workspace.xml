@@ -3,6 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/META-INF/Lito.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lito/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/Books.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/Controller$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/Greeting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/Registration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/error.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/g_mark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/templates/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lito/sample/templates/admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/templates/greeting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lito/sample/templates/greeting.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/templates/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lito/sample/templates/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/templates/main_page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lito/sample/templates/main_page.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lito/sample/templates/registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lito/sample/templates/registration.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Registration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +90,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="Class" />
         <option value="FxmlFile" />
         <option value="JUnit4 Test Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -133,18 +152,19 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="sample" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/sample/Controllers" />
+      <recent name="$PROJECT_DIR$/src/sample" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sample" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/sample" />
       <recent name="$PROJECT_DIR$/src/sample/templates" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="sample" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/sample" />
     </key>
   </component>
   <component name="RunManager">
@@ -179,7 +199,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sample.*" />
+          <option name="PATTERN" value="sample.ConnectorDB.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -271,6 +291,7 @@
       <workItem from="1577335506321" duration="19959000" />
       <workItem from="1577384131873" duration="621000" />
       <workItem from="1577423759469" duration="1954000" />
+      <workItem from="1577560350555" duration="2228000" />
     </task>
     <servers />
   </component>
@@ -314,22 +335,22 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="617" y="300" width="735" height="527" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1577285116582" />
-    <state width="1804" height="369" key="GridCell.Tab.0.bottom" timestamp="1577359180219">
+    <state width="1804" height="369" key="GridCell.Tab.0.bottom" timestamp="1577562912257">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="369" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1577359180219" />
-    <state width="1804" height="369" key="GridCell.Tab.0.center" timestamp="1577359180218">
+    <state width="1804" height="369" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1577562912257" />
+    <state width="1804" height="369" key="GridCell.Tab.0.center" timestamp="1577562912257">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="369" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1577359180218" />
-    <state width="1804" height="369" key="GridCell.Tab.0.left" timestamp="1577359180217">
+    <state width="1804" height="369" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1577562912257" />
+    <state width="1804" height="369" key="GridCell.Tab.0.left" timestamp="1577562912256">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="369" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1577359180217" />
-    <state width="1804" height="369" key="GridCell.Tab.0.right" timestamp="1577359180218">
+    <state width="1804" height="369" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1577562912256" />
+    <state width="1804" height="369" key="GridCell.Tab.0.right" timestamp="1577562912257">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="369" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1577359180218" />
+    <state width="1804" height="369" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1577562912257" />
     <state width="1804" height="340" key="GridCell.Tab.1.bottom" timestamp="1576177704923">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
